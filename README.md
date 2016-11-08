@@ -1,2 +1,12 @@
+Example application which uses Glassdoor api, ReactJS and C3 charts.
 
-http://api.glassdoor.com/api/api.htm?t.p=105003&t.k=gOL6dRbpBjg&userip=192.168.0.1&useragent=Chrome&format=json&v=1&action=jobs-prog&countryId=1&jobTitle=Programmer
+https://www.glassdoor.com/developer/index.htm
+https://reactcommunity.org/
+http://c3js.org/
+
+You have to run chrome with following switch:
+C:\Program Files (x86)\Google\Chrome\Application>chrome --user-data-dir="c:/temp/chrome_eng" --disable-web-security
+
+It is because Glassdoor api is not ment to receive requests from browser. 
+Therefore it does not contains Access-Control-Allow-Origin header and browser blocks this content. 
+To overcome this you need to run chrome with --disable-web-security swith.  
